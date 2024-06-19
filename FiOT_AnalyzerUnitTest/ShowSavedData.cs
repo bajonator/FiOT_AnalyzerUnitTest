@@ -150,5 +150,30 @@ namespace FiOT_AnalyzerUnitTest
             dataGridView2.ClearSelection();
             dataGridView2.CurrentCell = null;
         }
+
+        private void dataGridView2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ClearDatagridViewSelection(e);
+        }
+
+        private void ShowSavedData_MouseDown(object sender, MouseEventArgs e)
+        {
+            ClearDatagridViewSelection(e);
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ClearDatagridViewSelection(e);
+        }
+
+        private void ClearDatagridViewSelection(MouseEventArgs e)
+        {
+            DataGridView.HitTestInfo hit = dataGridView2.HitTest(e.X, e.Y);
+
+            if (hit.Type != DataGridViewHitTestType.Cell)
+            {
+                dataGridView2.ClearSelection();
+            }
+        }
     }
 }
