@@ -1,0 +1,19 @@
+Timestamp(yyyy/MM/dd HH:mm:ss.ffff),ItemID,Value
+2023.06.16 12:03:43.2559,ns=2;s=CO781.CO781.RequestDefined._Name,RequestDefined
+2023.06.16 12:03:43.2609,ns=2;s=CO781.CO781.ReadyForResponse._Name,ReadyForResponse
+2023.06.16 12:03:43.2639,ns=2;s=CO781.CO781.ResponseDefined._Name,ResponseDefined
+2023.06.16 12:03:43.2819,ns=2;s=CO781.CO781.ReadyForData,True
+2023.06.16 12:03:43.2819,ns=2;s=CO781.CO781.DataDefined,False
+2023.06.16 12:03:43.2889,ns=2;s=CO781.CO781.Request.ID01,7500823061512326
+2023.06.16 12:03:43.2889,ns=2;s=CO781.CO781.Request.Machine,CO781
+2023.06.16 12:03:43.2889,ns=2;s=CO781.CO781.Response.ID01,7500823061512322
+2023.06.16 12:03:43.2889,ns=2;s=CO781.CO781.Response.Machine,CO781
+2023.06.16 12:03:43.2989,ns=2;s=CO781.CO781.Response.State,NG
+2023.06.16 12:03:43.2989,ns=2;s=CO781.CO781.Response.ErrorReason,EU0001 - Prvni operace TP neni
+2023.06.16 12:03:43.3049,ns=2;s=CO781.CO781.Data.Header.ID01,7500823061511825
+2023.06.16 12:03:43.3049,ns=2;s=CO781.CO781.Data.Header.Machine,CO781
+2023.06.16 12:03:43.3049,ns=2;s=CO781.CO781.Data.Header.State,OK
+2023.06.16 12:03:43.3113,ns=2;s=CO781.CO781.Data.Header.ErrorReason,                                                            
+2023.06.16 12:05:58.6292,ns=2;s=CO781.CO781.Response.ID01,7500823061512326
+2023.06.16 12:05:58.6292,ns=2;s=CO781.CO781.Response.State,OK
+2023.06.16 12:05:58.6292,ns=2;s=CO781.CO781.Response.ErrorReason,
