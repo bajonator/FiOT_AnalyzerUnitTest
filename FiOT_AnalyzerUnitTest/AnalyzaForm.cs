@@ -15,9 +15,8 @@ namespace FiOT_AnalyzerUnitTest
 {
     public partial class AnalyzaForm : Form
     {
-        public static string FilePath = Path.Combine(Environment.CurrentDirectory, "dataModels.xml");
 
-        private SettingsDataHelper<List<DataModel>> _fileHelper = new SettingsDataHelper<List<DataModel>>(FilePath);
+        private SettingsDataHelper<List<DataModel>> _fileHelper = new SettingsDataHelper<List<DataModel>>(Program.FilePath);
 
         private DataTable _dataTable;
         HashSet<string> _flagsType1 = new HashSet<string> { "ReadyForRequest", "ResponseDefined", "RequestDefined", "ReadyForResponse", "Id" };
@@ -339,6 +338,11 @@ namespace FiOT_AnalyzerUnitTest
             }
             dataGridView2.ClearSelection();
             dataGridView2.CurrentCell = null;
+        }
+
+        private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
         }
     }
 }

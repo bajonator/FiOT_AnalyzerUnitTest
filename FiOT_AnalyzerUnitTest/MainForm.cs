@@ -106,5 +106,16 @@ namespace FiOT_AnalyzerUnitTest
             else
                 MessageBox.Show("Nejsou zadne data pro zobrazeni analyzy");
         }
+
+        private void btnLoadSavedData_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(Program.FilePath))
+            {
+                ShowSavedData showSavedData = new ShowSavedData();
+                showSavedData.Show();
+            }
+            else
+                MessageBox.Show("Data nebyly ulozene");
+        }
     }
 }

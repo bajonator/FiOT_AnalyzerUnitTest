@@ -42,6 +42,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnLoadSavedData = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -226,12 +227,25 @@
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
+            // btnLoadSavedData
+            // 
+            this.btnLoadSavedData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoadSavedData.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnLoadSavedData.Location = new System.Drawing.Point(264, 53);
+            this.btnLoadSavedData.Name = "btnLoadSavedData";
+            this.btnLoadSavedData.Size = new System.Drawing.Size(123, 48);
+            this.btnLoadSavedData.TabIndex = 9;
+            this.btnLoadSavedData.Text = "Nacist ulozene data";
+            this.btnLoadSavedData.UseVisualStyleBackColor = true;
+            this.btnLoadSavedData.Click += new System.EventHandler(this.btnLoadSavedData_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1048, 725);
+            this.Controls.Add(this.btnLoadSavedData);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnAnalyza);
@@ -269,6 +283,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnLoadSavedData;
     }
 }
 
