@@ -18,8 +18,8 @@ namespace FiOT_AnalyzerUnitTest
         public ShowSavedData()
         {
             InitializeComponent();
-
-            LoadData();
+            dataGridView2.ClearSelection();
+            dataGridView2.CurrentCell = null;
         }
 
 
@@ -64,9 +64,9 @@ namespace FiOT_AnalyzerUnitTest
                     }
                 }
             }
-            dataGridView2.ClearSelection();
-            dataGridView2.CurrentCell = null;
+
             dataGridView2.CellValueChanged += dataGridView2_CellValueChanged;
+
         }
 
 
@@ -139,6 +139,16 @@ namespace FiOT_AnalyzerUnitTest
         private void btnImportXml_Click(object sender, EventArgs e)
         {
             LoadData();
+            dataGridView2.ClearSelection();
+            dataGridView2.CurrentCell = null;
+        }
+
+        private void ShowSavedData_Load(object sender, EventArgs e)
+        {
+            LoadData();
+
+            dataGridView2.ClearSelection();
+            dataGridView2.CurrentCell = null;
         }
     }
 }

@@ -340,9 +340,10 @@ namespace FiOT_AnalyzerUnitTest
             dataGridView2.CurrentCell = null;
         }
 
-        private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
+        private void AnalyzaForm_Load(object sender, EventArgs e)
         {
-
+            dataGridView2.ClearSelection();
+            dataGridView2.CurrentCell = null;
         }
     }
 }

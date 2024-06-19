@@ -176,7 +176,6 @@
             this.splitter1.Size = new System.Drawing.Size(6, 25);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
-            this.splitter1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter1_SplitterMoved);
             // 
             // btnExportXml
             // 
@@ -300,6 +299,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Analyza";
+            this.Load += new System.EventHandler(this.AnalyzaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

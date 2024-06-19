@@ -117,5 +117,10 @@ namespace FiOT_AnalyzerUnitTest
             else
                 MessageBox.Show("Data nebyly ulozene");
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
