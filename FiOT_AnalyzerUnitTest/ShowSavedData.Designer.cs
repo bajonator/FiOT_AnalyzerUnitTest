@@ -70,7 +70,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(934, 30);
             this.panel2.TabIndex = 1;
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // dataGridView2
             // 
@@ -99,7 +98,6 @@
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(934, 556);
             this.dataGridView2.TabIndex = 8;
-            this.dataGridView2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dataGridView2_MouseDown);
             // 
             // ReadyForRequest
             // 
@@ -201,7 +199,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Saved Data";
             this.Load += new System.EventHandler(this.ShowSavedData_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ShowSavedData_MouseDown);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
