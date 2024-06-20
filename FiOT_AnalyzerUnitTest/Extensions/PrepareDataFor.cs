@@ -50,7 +50,7 @@ namespace FiOT_AnalyzerUnitTest.Extensions
 
                 if (item.ReadyForRequest == "1" && item.ResponseDefined == "0" && item.RequestDefined == "0" && item.ReadyForResponse == "0" && item.ReadyForData == "1" && item.DataDefined == "0")
                 {
-                    dataGridView.Rows[rowIndex].DefaultCellStyle.ForeColor = Color.DarkGreen;
+                    dataGridView.Rows[rowIndex].DefaultCellStyle.ForeColor = Color.DarkViolet;
                 }
                 for (int i = 0; i < row.Cells.Count; i++)
                 {
