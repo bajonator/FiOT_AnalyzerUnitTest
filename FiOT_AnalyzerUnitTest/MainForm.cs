@@ -27,11 +27,14 @@ namespace FiOT_AnalyzerUnitTest
 
             path = fileHelper.GetFileName();
 
-            tbFileSelected.Text = path;
+            if (!string.IsNullOrEmpty(path))
+            {
+                tbFileSelected.Text = path;
 
-            InitDataTable();
-            PrepareData();
-            PopulateDataToDatagrid();
+                InitDataTable();
+                PrepareData();
+                PopulateDataToDatagrid();
+            }
         }
 
         private void PopulateDataToDatagrid()

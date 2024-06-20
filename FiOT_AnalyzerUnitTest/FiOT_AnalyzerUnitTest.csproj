@@ -54,7 +54,7 @@
       <DependentUpon>AnalyzaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\DataModel.cs" />
-    <Compile Include="Extensions\DataProcessor.cs" />
+    <Compile Include="Extensions\PrepareDataFor.cs" />
     <Compile Include="Helpers\SettingsDataHelper.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
