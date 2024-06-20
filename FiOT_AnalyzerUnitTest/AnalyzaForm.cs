@@ -179,7 +179,6 @@ namespace FiOT_AnalyzerUnitTest
             {
                 var newRow = new DataGridViewRow();
                 newRow.CreateCells(dataGridView2);
-                newRow.Cells[0].Value = _readyForRequest;
                 newRow.Cells[1].Value = _responseDefined;
                 newRow.Cells[2].Value = _requestDefined;
                 newRow.Cells[3].Value = _readyForResponse;
